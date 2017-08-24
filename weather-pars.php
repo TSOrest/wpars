@@ -19,15 +19,15 @@ curl_close($ch);
 
 #Parse
 $img0=$imgurl.str_replace('"','',substr($content,strpos($content,$fndimg)+27,2)).'.svg';
-$temp0=str_replace('В','',str_replace('/','',str_replace('<','',substr($content,strpos($content,$fndtemp)+31,6))));
+$temp0=str_replace('Р’','',str_replace('/','',str_replace('<','',substr($content,strpos($content,$fndtemp)+31,6))));
 $img1=$imgurl.str_replace('"','',substr($content,strpos($content,$fndimg1)+118,2)).'.svg';
 $img2=$imgurl.str_replace('"','',substr($content,strpos($content,$fndimg2)+118,2)).'.svg';
-$temp1=str_replace('В','',str_replace('/','',str_replace('<','',substr($content,strpos($content,$fndtemp1)+146,5))));
-$temp2=str_replace('В','',str_replace('/','',str_replace('<','',substr($content,strpos($content,$fndtemp2)+146,5))));
+$temp1=str_replace('Р’','',str_replace('/','',str_replace('<','',substr($content,strpos($content,$fndtemp1)+146,5))));
+$temp2=str_replace('Р’','',str_replace('/','',str_replace('<','',substr($content,strpos($content,$fndtemp2)+146,5))));
 
 #Out 
 #echo '<div id="Console">';
-#echo '<hr>Консоль виводу:';
+#echo '<hr>РљРѕРЅСЃРѕР»СЊ РІРёРІРѕРґСѓ:';
 #echo '<br>img0 - "'.$img0.'"';
 #echo '<br>temp0 - "'.$temp0.'"';
 #echo '<br>img1 - "'.$img1.'"';
@@ -36,8 +36,6 @@ $temp2=str_replace('В','',str_replace('/','',str_replace('<','',substr($content,
 #echo '<br>temp2 - "'.$temp2.'"';
 #echo '<br><hr><br></div>';
 ?>
-
-
 
 <html>
 <head><title>Weather</title>
@@ -125,7 +123,7 @@ $temp2=str_replace('В','',str_replace('/','',str_replace('<','',substr($content,
 	<div id="float">
         
 		<div id=d1>
-            <legend>Завтра</legend>
+            <legend>Р—Р°РІС‚СЂР°</legend>
             <div id="fw">
                 <img src="<?php echo $img1; ?>">
                 <span><?php echo $temp1; ?></span>        
@@ -135,7 +133,7 @@ $temp2=str_replace('В','',str_replace('/','',str_replace('<','',substr($content,
         <div id="divider">|</div>
         
         <div id=d2>
-            <legend>Післязавтра</legend>
+            <legend>РџС–СЃР»СЏР·Р°РІС‚СЂР°</legend>
             <div id="fw">
                 <img src="<?php echo $img2; ?>">
                 <span><?php echo $temp2; ?></span>     
