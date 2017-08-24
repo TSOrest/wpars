@@ -35,6 +35,7 @@ $temp2=str_replace('В','',str_replace('/','',str_replace('<','',substr($content
 #echo '<br>img2 - "'.$img2.'"';
 #echo '<br>temp2 - "'.$temp2.'"';
 #echo '<br><hr><br></div>';
+
 ?>
 
 <html>
